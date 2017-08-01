@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "description": "Start write new project with no effort.",
   "scripts": {
-    "build": "rimraf lib && webpack --config webpack.production.config.js",
+    "npm-build": "rimraf lib && webpack --config webpack.production.config.js",
     "link-mode": "webpack --watch --config ./webpack.link.config.js",
     "lint": "eslint src/client",
     "publish-release": "npm run npm-build && npm-publish --release",
-    "prepublish": "npm run build",
+    "prepublish": "npm run npm-build",
     "start": "node www/index",
     "test": "mocha --compilers js:babel-core/register --require ignore-styles --require ./test/setup.js --recursive src/**/*.spec.js"
   },
