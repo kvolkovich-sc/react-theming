@@ -1,5 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import './ThemeProvider.less';
+import '@webcomponents/shadycss/apply-shim.min';
+import css from '@webcomponents/shadycss/custom-style-interface.min';
+import ReactDOM from 'react-dom';
 
 const propTypes = {
   theme: PropTypes.object
@@ -19,17 +22,20 @@ class ThemeProvider extends Component {
   }
 
   updateTheme(theme) {
-    Object.keys(theme).forEach((key, i) => {
+    let style = Object.keys(theme).reduce((accum, key) => {
       let propertyName = `--${key}`;
       let propertyValue = theme[key];
 
-      this.ref.style.setProperty(propertyName, propertyValue);
-    });
+      return Object.assign({}, accum, { [propertyName]: propertyValue });
+    }, {});
+
+    window.ShadyCSS.styleDocument(style);
+    window.ShadyCSS.styleSubtree(ReactDOM.findDOMNode(this.ref), style);
   }
 
   render() {
     return (
-      <div ref={ref => (this.ref = ref)}>
+      <div className="theme-provider" ref={ref => (this.ref = ref)}>
         {this.props.children}
       </div>
     );

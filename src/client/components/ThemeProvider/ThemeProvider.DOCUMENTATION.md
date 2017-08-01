@@ -14,12 +14,13 @@ ThemeProvider is
 ```
 <ThemeProvider
   theme={{
-    'text-color': '#0f0'
+    'text-color-primary': '#00f',
+    'text-color-danger': '#f00'
   }}
 >
   <div
     style={{ 
-      color: 'var(--text-color)' 
+      color: 'var(--text-color-primary)' 
     }}
   >
     hello
