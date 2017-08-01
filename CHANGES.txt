@@ -1,4 +1,11 @@
 
+Release 0.0.3 Tue Aug 01 2017 23:26:09 GMT+0300 (+03)
+=======================================================
+
+ - Add yarn.lock to .gitignore (Kirill Volkovich <kirill.volkovich@jcatalog.com>, Tue Aug 1 23:14:31 2017 +0300)
+ - Add publishConfig field to package.json (Kirill Volkovich <kirill.volkovich@jcatalog.com>, Tue Aug 1 23:13:50 2017 +0300)
+ - Updating to a version to  0.0.3 (Kirill Volkovich <volkovich@scand.com>, Tue Aug 1 17:56:23 2017 +0300)
+
 Release 0.0.2 Tue Aug 01 2017 17:56:14 GMT+0300 (+03)
 =======================================================
 
