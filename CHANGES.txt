@@ -1,0 +1,8 @@
+
+Release 0.0.1 Tue Aug 01 2017 17:52:13 GMT+0300 (+03)
+=======================================================
+
+ - Fix build (Kirill Volkovich <volkovich@scand.com>, Tue Aug 1 17:52:06 2017 +0300)
+ - Fix build (Kirill Volkovich <volkovich@scand.com>, Tue Aug 1 17:51:27 2017 +0300)
+ - First release (Kirill Volkovich <volkovich@scand.com>, Tue Aug 1 17:50:32 2017 +0300)
+ - Initial commit (Kirill Volkovich <volkovich@scand.com>, Fri Jul 28 19:51:42 2017 +0300)
